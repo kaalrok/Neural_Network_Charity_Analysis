@@ -23,12 +23,17 @@ Create a binary classifier that is capable of predicting whether applicants will
 
 ### Compiling, Training, and Evaluating the Model
  - How many neurons, layers, and activation functions did you select for your neural network model, and why?
+    - We kept upping the nodes and layers trying to get more "time" to narrow down the loss, and raise the accuracy of the model.
+
     - The first model was run at:
         hidden_nodes_layer1 = 80
         hidden_nodes_layer2 = 50
         hidden_nodes_layer3 = 30
         And the epochs were set at 100, with len(X_train[0]) = 40
-    
+
+![Deliverable 3-Model 1](./Pictures/D3_M1.png)
+![Deliverable 3-Model 1 Accuracy](./Pictures/D3_M1_accuracy.png)
+   
     - The second model was run at:
         number_input_features = len(X_train[0]) = 47
         hidden_nodes_layer1 = number_input_features * 3
@@ -37,12 +42,18 @@ Create a binary classifier that is capable of predicting whether applicants will
         hidden_nodes_layer4 = 20
         And the epochs were set at 100
 
+![Deliverable 3-Model 2](./Pictures/D3_M2.png)
+![Deliverable 3-Model 2 Accuracy](./Pictures/D3_M2_accuracy.png)
+
     - The third model was run at:
         number_input_features = len(X_train[0]) = 395
         hidden_nodes_layer1 = number_input_features * 3
         hidden_nodes_layer2 = number_input_features * 2
         hidden_nodes_layer3 = number_input_features * 1
         And the epochs were set at 100
+
+![Deliverable 3-Model 3](./Pictures/D3_M3.png)
+![Deliverable 3-Model 3 Accuracy](./Pictures/D3_M3_accuracy.png)
 
  - Were you able to achieve the target model performance?
     - No. None of the models was able to reach the target.
